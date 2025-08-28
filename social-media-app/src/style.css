@@ -1,0 +1,248 @@
+/* Reset default body spacing and font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Frosted Glass Container */
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  margin: 50px auto;
+
+  background: rgba(0, 0, 0, 0.3); /* Darker transparent glass */
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Logo at top */
+.logo {
+  display: block;
+  width: 100px;
+  margin: 0 auto 15px;
+}
+
+/* Tagline below logo */
+.app-title {
+  text-align: center;
+  font-size: 22px;
+  margin-top: -5px;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 600;
+  font-style: italic;
+
+  background-color: rgba(0, 0, 0, 0.5);  /* dark translucent background */
+  padding: 8px 14px;
+  border-radius: 10px;
+  display: inline-block;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Link and text below form */
+p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #eee;
+}
+
+a {
+  color: #66bfff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Headings like Login, Register */
+h2 {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.post-card {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.post-card h3 {
+  margin-top: 0;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.delete-btn {
+  margin-top: 10px;
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+.edit-btn {
+  margin-right: 10px;
+  background-color: #ffc107;
+  color: #000;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+.like-btn {
+  background-color: #28a745;
+  color: white;
+  margin-right: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.like-btn:hover {
+  background-color: #218838;
+}
+.comment-btn {
+  background-color: #6c63ff;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.comment-btn:hover {
+  background-color: #5848cc;
+}
+
+.comments {
+  margin-top: 15px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.comments input {
+  width: 80%;
+  padding: 8px;
+  margin-right: 5px;
+}
+
+.comment {
+  background-color: #f5f5f5;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 100px;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+.post-img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.post-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.post-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .post-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+}
